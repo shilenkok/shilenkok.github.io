@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Николай Шиленко</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="head-title">
+                <h1>верстка сайтов</h1>
+                <p>Николай Шиленко - HTML & CSS Верстальщик</p>
+                <div class="arrow-go">
+                    <div class="go-arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="experience">
+            <h1>Мои навыки</h1>
+        </div>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg2.jpg">
+            <div id="experience-sect">
+                <section class="experience-block">
+                    <p class="experience-text">Мои знания HTML</p> 
+                    <div class="progressbar">
+                        <div id="pb-90" class="green-progressbar"></div>
+                    </div>
+                    <p style="margin-top: 20px;" class="experience-text">90%</p> 
+
+                </section>
+                <section class="experience-block">
+                    <p class="experience-text">Мои знания JavaScript</p>
+                    <div class="progressbar">
+                        <div id="pb-70" class="green-progressbar"></div>
+                    </div>
+                    <p style="margin-top: 20px;" class="experience-text">50%</p> 
+                </section>
+                <section class="experience-block">
+                    <p class="experience-text">Мои знания CSS</p>
+                    <div class="progressbar">
+                        <div id="pb-80" class="green-progressbar"></div>
+                    </div>
+                    <p style="margin-top: 20px;" class="experience-text">75%</p> 
+                </section>
+                
+                <section class="experience-block">
+                    <p class="experience-text">Мои знания PHP</p>
+                    <div class="progressbar">
+                        <div id="pb-60" class="green-progressbar"></div>
+                    </div>
+                    <p style="margin-top: 20px;" class="experience-text">40%</p> 
+                </section>
+            </div>
+            
+        
+        </div>
+
+        <div class="libraries">
+            <h1>С чем я работаю</h1>
+        </div>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg3.jpg">
+            <div class="librar-sect">
+                <section class="librar-block">
+                    <img style="background-color: white;" src="img/ajax.png" height="133px" width="243px" alt="">
+                    <p>Ajax</p>
+                </section>
+                <section class="librar-block">
+                    <img src="img/jquery.jpg" height="133px" width="243px"  alt="">
+                    <p>Jquery</p>
+                </section>
+                <section class="librar-block">
+                    <img src="img/html.png" height="133px" width="243px"  alt="">
+                    <p>HTML5</p>
+                </section>
+                <section class="librar-block">
+                    <img src="img/css.jpg" height="133px" width="243px"  alt="">
+                    <p>CSS3</p>
+                </section>
+                <section class="librar-block">
+                    <img src="img/js.png" height="133px" width="243px"  alt="">
+                    <p>JavaScript</p>
+                </section>
+                <section class="librar-block">
+                    <img src="img/php.jpg" height="133px" width="243px"  alt="">
+                    <p>PHP</p>
+                </section>
+                <section class="librar-block">
+                    <img src="img/photoshop.jpg" height="133px" width="243px"  alt="">
+                    <p>Adobe Photoshop</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="experience">
+            <h1>Связь со мной</h1>
+        </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg4.jpg">
+            <div class="contact-sections">
+                
+                <section class="contact-sect">
+                    <div class="img">
+                        <img height="120px" width="120px" src="img/mail.jpg" alt="">
+                    </div>
+                    <p>shilenkok@bk.ru</p>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.arrow-go').on('click', function(e){
+                $('html,body').stop().animate({ scrollTop: $('.experience').offset().top }, 1000);
+                e.preventDefault();
+            });
+
+            
+
+        })
+    </script>
+</body>
+</html>
